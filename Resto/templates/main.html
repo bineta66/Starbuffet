@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <!-- section banier -->
+    <section class="banner">
+        <div class="desc">
+            <div class="texte">
+                <h1>Découvrez la <span class="jaune">cuisine sénégalaise</span></h1>
+                <p>Explorer les saveurs authentiques du Sénégal. Du thiéboudieunne aux Alloco, apprenez les secret de la
+                    cuisine sénégalaise avec nos chefs experts.</p>
+            </div>
+            <div class="image">
+                <p><span><i class="fa-solid fa-search"></i></span>Cours disponibles</p>
+               <img src="{% static 'images/thieboudieunerouge.JPG' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- section carte -->
+    <section class="row">
+        <div class="bloc1">
+            <div class="card">
+                <h3>100+</h3>
+                <p>Restaurants Partenaires</p>
+            </div>
+            <div class="card">
+                <h3>30 min</h3>
+                <p>Livraison Moyenne</p>
+            </div>
+            <div class="card">
+                <h3>50+</h3>
+                <p>Cours de Cuisine</p>
+            </div>
+            <div class="card">
+                <h3>4.8/5</h3>
+                <p>Note Moyenne</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section service -->
+    <section class="section-service">
+        <div class="row-title">
+            <h2>Nos Services</h2>
+            <p>Découvrez nos services de qualité pour tout vos besoins culinaires</p>
+        </div>
+        <div class="bloc2">
+            <div class="card">
+                <h4>Trouver un restaurant</h4>
+                <p>commander vos plats préférés et faites vous livrer rapidement à domicile.</p>
+                <a href="">Trouver maintenant <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+            <div class="card">
+                <h4>Cours de cuisine</h4>
+                <p>Apprenez à cuisiner avec nos chefs professionnels en direct ou en replay.</p>
+                <a href="">Découvrir les cours <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+            <div class="card">
+                <h4>Service de traiteur</h4>
+                <p>Organisez vos événements avec nos services de traiteur professionnels.</p>
+                <a href="">Voir les traiteurs <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section carte google maps -->
+    <section class="section-carte">
+        <div class="row-title">
+            <h2>Trouver les restaurant les plus proche de vous</h2>
+        </div>
+        <div class="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123488.80135142368!2d-17.548228197314177!3d14.711175940994089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar!5e0!3m2!1sfr!2ssn!4v1766177207816!5m2!1sfr!2ssn"
+                width="650" height="260" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- section commentaire client -->
+    <section class="section-client">
+        <div class="row-title">
+            <h2>Ce que disent nos client à propos des restaurants</h2>
+        </div>
+        <div class="bloc3">
+            <div class="card">
+                <div class="noms">
+                    <h3 class="initial">FD</h3>
+                    <div class="nom-complet">
+                        <h4>Fatou Diop</h4>
+                        <small class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </small>
+                    </div>
+                </div>
+                <small class="comentaire">"Excellent service ! les plats sont délicieux et la livraison rapide."</small>
+            </div>
+            <div class="card">
+                <div class="noms">
+                    <h3 class="initial">MD</h3>
+                    <div class="nom-complet">
+                        <h4>Mamadou Diallo</h4>
+                        <small class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </small>
+                    </div>
+                </div>
+                <small class="comentaire">"J'ai adoré les cours de cuisine. Les chefs sont très professionnels."</small>
+            </div>
+            <div class="card">
+                <div class="noms">
+                    <h3 class="initial">AB</h3>
+                    <div class="nom-complet">
+                        <h4>Aissatou Ba</h4>
+                        <small class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span><i class="fa-solid fa-star"></i></span>
+                        </small>
+                    </div>
+                </div>
+                <small class="comentaire">"Service de traiteur impeccable pour mon mariage. Tout était parfait
+                    !"</small>
+            </div>
+            <div class="card">
+                <div class="noms">
+                    <h3 class="initial">OS</h3>
+                    <div class="nom-complet">
+                        <h4>Ousmane Sall</h4>
+                        <small class="etoiles">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </small>
+                    </div>
+                </div>
+                <small class="comentaire">"La meilleure plateforme pour découvrir la cuisine sénégalaise."</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- section banier trouver restaurant -->
+    <section class="banner2">
+        <div class="message">
+            <h2>Prêt à commencer ? Commandez dès maintenant.</h2>
+            <p>Découvrez nos restaurants partenaires et faites-vous livrer vos plats préférés.</p>
+            <button><a href=""></a>Trouver un restaurant !</button>
+        </div>
+    </section>
+{% endblock %}

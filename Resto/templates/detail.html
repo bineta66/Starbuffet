@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="image-section">
+    <div class="image-detail">
+        <img src="{{ traiteur.image.url }}" alt="{{ traiteur.nomcomplet }}">
+
+        <div class="bdg-detail">
+            <div class="rt">
+                <i class="fa-solid fa-star"></i>
+                <p>4.0/5</p>
+            </div>
+            <p class="valide-detail">
+                <i class="fa-solid fa-circle-check"></i> Valide
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="detail-layout">
+
+        <!-- LEFT -->
+        <div class="detail-left">
+
+            <div class="card-detail-left">
+                <strong class="bdg">À propos</strong>
+                <p> {{traiteur.nomcomplet}} </p>
+                <p>{{ traiteur.description }}</p>
+            </div>
+
+            <div class="card-detail-left">
+                 <strong class="bdg">Spécialites:</strong>
+              <div class="badge">
+    {% for sp in specialites_list %}
+        <p>{{ sp }}</p>
+    {% endfor %}
+</div>
+            </div>
+
+         
+        </div>
+
+        <!-- RIGHT -->
+        <div class="detail-right">
+
+            <div class="card-detail-left">
+                <strong class="bdg">Contact</strong>
+                <p>{{ traiteur.adresse }}</p>
+                <p>{{ traiteur.telephone }}</p>
+                <p>{{ traiteur.email }}</p>
+            </div>
+
+            <div class="card-detail-left">
+                <strong class="bdg">Expérience</strong>
+                <p>{{ traiteur.experience }} ans d'expérience</p>
+            </div>
+
+            
+
+            <div class="card-detail-btn">
+                <button class="detail-button">Contacter</button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

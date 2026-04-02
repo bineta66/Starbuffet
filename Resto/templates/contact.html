@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Envoyez-nous un message ou visitez notre restaurant.</p>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="nom" placeholder="Votre nom">
+        <input type="email" name="email" placeholder="Votre email">
+        <textarea name="message" placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?..."></iframe>
+    </div>
+</section>
+{% endblock %}
